@@ -17,11 +17,11 @@ Fluminense (UFF), Brazil.
 
 **Source URL:** https://visual.ic.uff.br/dmi/
 
-**Data type: ** Infrared breast thermograms
+**Data type:** Infrared breast thermograms
 
 **Classes:** Benign (Healthy) and Malignant
 
-**Number of images used: ** 863
+**Number of images used:** 863
 
 **Class distribution:** Affected – 689, Healthy – 174
 
