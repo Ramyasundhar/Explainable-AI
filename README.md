@@ -1,26 +1,29 @@
-DESCRIPTION
+**DESCRIPTION**
+
 This repository contains the implementation of an explainable deep learning framework
 for automatic classification of breast thermographic images into benign and malignant
 classes. The framework integrates multi-channel image preprocessing, transfer learning
 using DenseNet121, hyperparameter ablation analysis, and Grad-CAM-based explainability
 to improve transparency and reproducibility in thermographic computer-aided diagnosis.
 
-DATASET INFORMATION
+**DATASET INFORMATION**
+
 The thermographic images used in this study are obtained from the publicly available
 Database for Mastology Research – Infrared (DMR-IR), curated by the Universidade Federal
 Fluminense (UFF), Brazil.
 
-Dataset name: Database for Mastology Research – Infrared (DMR-IR)
-Source URL: https://visual.ic.uff.br/dmi/
-Data type: Infrared breast thermograms
-Classes: Benign (Healthy) and Malignant
-Number of images used: 863
-Class distribution: Affected – 689, Healthy – 174
+**Dataset name:** Database for Mastology Research – Infrared (DMR-IR)
+**Source URL:** https://visual.ic.uff.br/dmi/
+**Data type: **Infrared breast thermograms
+**Classes:** Benign (Healthy) and Malignant
+**Number of images used: **863
+**Class distribution:** Affected – 689, Healthy – 174
 
 The dataset is not redistributed in this repository and must be downloaded directly
 from the official source in accordance with its usage policy.
 
-CODE INFORMATION
+**CODE INFORMATION**
+
 The repository includes Python scripts and Jupyter notebooks implementing:
 - Image preprocessing (grayscale normalization, Prewitt and Roberts edge detection)
 - Three-channel image construction
@@ -30,14 +33,15 @@ The repository includes Python scripts and Jupyter notebooks implementing:
 - Grad-CAM visualization and aggregation
 - Performance evaluation and plotting
 
-USAGE INSTRUCTIONS
-1. Clone the repository:
+**USAGE INSTRUCTIONS**
+
+**1. Clone the repository:**
    git clone https://github.com/Ramyasundhar/Explainable-AI.git
 
-2. Download the DMR-IR dataset from:
+**2. Download the DMR-IR dataset from:**
    https://visual.ic.uff.br/dmi/
 
-3. Organize the dataset into training and validation folders:
+**3. Organize the dataset into training and validation folders:**
    dataset/
      ├── train/
      │    ├── benign/
@@ -50,7 +54,7 @@ USAGE INSTRUCTIONS
 
 5. Run preprocessing, training, and evaluation cells sequentially.
 
-REQUIREMENTS
+**REQUIREMENTS**
 - Python 3.8+
 - TensorFlow / Keras
 - NumPy
@@ -59,9 +63,9 @@ REQUIREMENTS
 - Matplotlib
 - Scikit-image
 
-Recommended environment: Google Colab with GPU support.
+**Recommended environment:** Google Colab with GPU support.
 
-METHODOLOGY
+**METHODOLOGY**
 1. Normalize thermographic images to [0,1].
 2. Apply Prewitt and Roberts operators for edge enhancement.
 3. Stack grayscale, Prewitt, and Roberts outputs into a three-channel input.
@@ -70,12 +74,12 @@ METHODOLOGY
 6. Generate Grad-CAM heatmaps for model interpretability.
 7. Perform aggregated explainability and error analysis.
 
-CITATIONS
+**CITATIONS**
 If you use this code or dataset, please cite:
 - The DMR-IR dataset source: https://visual.ic.uff.br/dmi/
 - The corresponding research article describing this framework.
 
-LICENSE & CONTRIBUTIONS
+**LICENSE & CONTRIBUTIONS**
 This code is provided for academic and research purposes.
 Users are encouraged to cite the original authors.
 Contributions and issues can be submitted via GitHub.
