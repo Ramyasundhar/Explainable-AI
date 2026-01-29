@@ -12,12 +12,19 @@ The thermographic images used in this study are obtained from the publicly avail
 Database for Mastology Research – Infrared (DMR-IR), curated by the Universidade Federal
 Fluminense (UFF), Brazil.
 
+
 **Dataset name:** Database for Mastology Research – Infrared (DMR-IR)
+
 **Source URL:** https://visual.ic.uff.br/dmi/
+
 **Data type: **Infrared breast thermograms
+
 **Classes:** Benign (Healthy) and Malignant
+
 **Number of images used: **863
+
 **Class distribution:** Affected – 689, Healthy – 174
+
 
 The dataset is not redistributed in this repository and must be downloaded directly
 from the official source in accordance with its usage policy.
@@ -55,6 +62,7 @@ The repository includes Python scripts and Jupyter notebooks implementing:
 5. Run preprocessing, training, and evaluation cells sequentially.
 
 **REQUIREMENTS**
+
 - Python 3.8+
 - TensorFlow / Keras
 - NumPy
@@ -66,6 +74,7 @@ The repository includes Python scripts and Jupyter notebooks implementing:
 **Recommended environment:** Google Colab with GPU support.
 
 **METHODOLOGY**
+
 1. Normalize thermographic images to [0,1].
 2. Apply Prewitt and Roberts operators for edge enhancement.
 3. Stack grayscale, Prewitt, and Roberts outputs into a three-channel input.
@@ -75,11 +84,13 @@ The repository includes Python scripts and Jupyter notebooks implementing:
 7. Perform aggregated explainability and error analysis.
 
 **CITATIONS**
+
 If you use this code or dataset, please cite:
 - The DMR-IR dataset source: https://visual.ic.uff.br/dmi/
 - The corresponding research article describing this framework.
 
 **LICENSE & CONTRIBUTIONS**
+
 This code is provided for academic and research purposes.
 Users are encouraged to cite the original authors.
 Contributions and issues can be submitted via GitHub.
