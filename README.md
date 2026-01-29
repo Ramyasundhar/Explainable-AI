@@ -50,14 +50,20 @@ The repository includes Python scripts and Jupyter notebooks implementing:
 
 **3. Organize the dataset into training and validation folders:**
 
-   dataset/
-     ├── train/
-     │    ├── benign/
-     │    └── malignant/
-     └── val/
-          ├── benign/
-          └── malignant/
-          
+   **dataset
+   
+        train
+        
+              benign
+              
+              malignant
+              
+         val
+         
+               benign
+               
+               malignant**
+                         
 
 4. Open the main Jupyter notebook or Python script in Google Colab or a local environment.
 
